@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
+
+import { AboutUs, Realtor, FindUs, Footer, Gallery, Header, Intro } from './container';
+import { Navbar } from './components';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-         Realestate Rock
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div>
+    <Navbar />
+    <Header />
+    <AboutUs />
+    <Realtor />
+    <Intro />
+  
+    <Gallery />
+    <FindUs />
+    <Footer />
+  </div>
+);
 
 export default App;
